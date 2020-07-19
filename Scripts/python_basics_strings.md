@@ -84,5 +84,5 @@ Thanks for watching this introduction to Strings in Python.
 Strings are used constantly in Python. 
 Python has tons of advanced features for manipulating strings and parsing text. 
 We've only scratched the surface here, but I would always recommend Python first whenever you need to work programatically on any text.
-Links to the code and my blog post on tuples are in the description. 
+Links to the code and my blog post on strings are in the description. 
 I'll see everyone next time. 
