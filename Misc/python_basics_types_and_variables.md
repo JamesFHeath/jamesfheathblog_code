@@ -44,6 +44,8 @@ A very useful tool is the builtin **id** function.
 It takes a variable and returns the id of its memory location as just a number. 
 You can use this to compare different variables to see if they are pointing to the same memory. 
 
+a = 77
+id(a)
 Here I define list 2 as list 1, and their ids are equal. 
 l1 = [1, 2, 3]
 l2 = l1

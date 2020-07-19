@@ -6,7 +6,7 @@ Examples of exceptions are division by 0, operating on the wrong type, or missin
 It's important to know how to handle exceptions using try/except logic. 
 
 
-# Handling Exceptions
+# Handling Exceptions with Try/Except
 Handling exceptions requires using the **try/except** keywords. 
 
 First I'm attempting division by zero, and we get division by zero error 
@@ -23,6 +23,7 @@ We can also access the specific exception raised in order to operate on it.
 Here I'm capturing the exception as the variable e, and printing it out. 
 Capturing this output is great for logging. 
 
+'hello' + 1
 try:
     'hello' + 1
 except TypeError as e:
