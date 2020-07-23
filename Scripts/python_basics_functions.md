@@ -1,4 +1,6 @@
 # Introduction
+Hi Everyone, SearingFrost here with another Python Basics Video.
+Today, we'll be talking about functions in Python.
 Functions in Python are the basic building blocks of structure for your programs. 
 Python functions organize parts of code together, and allow you to easily run the same code many times. 
 Python functions are also **first class citizens**, this means that functions can be treated as any other objects like being assigned to variables or even passed as arguments to other functions. 
