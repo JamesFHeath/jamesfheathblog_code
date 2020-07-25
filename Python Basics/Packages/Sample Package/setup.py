@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="PythonBasicsPip",
+    name="PythonBasicsPackage",
     version="1.0.0",
     author="Me",
     author_email="jamesheathradford@gmail.com",
