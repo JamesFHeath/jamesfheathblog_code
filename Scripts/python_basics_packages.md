@@ -9,7 +9,7 @@ Packages can even contain subpackages.
 # Importing Packages
 To import packages, you use the import keyword to import the definitions from the package's \_\_init\_\_.py or from modules inside the package. 
 Dot notation is used to get to subpackages and definitions within modules. 
-We're going to import from an imaginary package just to see what it looks like. 
+We're going to import from the package defined here. 
 You can import the entire package.
 And also modules inside the package
 And also subpackages inside the package

@@ -10,7 +10,7 @@ Python uses *if*, *elif*, and *else* to execute code based on boolean values.
 *if* and *elif* preceede an expression that evaluates to a boolean value, and execute the code indented below them if the value is True. 
 *else* blocks of code will execute if all *if*s and *elif*s failed. 
 
-Python uses the words *and*, *or*, and *not* for logical and, or, and not, as opposed to symbols like &. 
+Python uses the words *and*, *or*, and *not* for logical and, or, and not, as opposed to other languages that use symbols. 
 
 Boolean values can be assigned to variables and returned from functions just like any object. 
 Then we can operate on the variables. 
