@@ -1,5 +1,6 @@
 Links:
-https://blog.jamesfheath.com/2020/07/python-library-tenacity.html
+Blog: https://blog.jamesfheath.com/2020/07/python-library-tenacity.html
+Code: https://github.com/JamesFHeath/jamesfheathblog_code/blob/master/Python%20Libraries/python_library_tenacity.md
 Tenacity on PyPi: https://pypi.org/project/tenacity/
 Tenacity Source on GitHub: https://github.com/jd/tenacity
 
@@ -55,7 +56,7 @@ def exponential_backoff_attempts():
     print('Runs at second intervals of 0, 2, 4, 8, 10, 10, 10...')
     raise Exception
 
-### Custom Retrying Logic
+# Custom Retrying Logic
 Retrying a function based on the type of exception raised can also be very useful. 
 In this example, the function only retries on IOError and ConnectionError exceptions, but allows TypeError to be raised immediately. 
 This would be useful for retrying failed input/output calls and network calls. 

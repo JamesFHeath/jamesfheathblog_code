@@ -6,18 +6,15 @@ def exception_function():
     print('exception time!')
     raise Exception
 
-
 @retry(stop=stop_after_attempt(5))
 def max_attempts():
     print('Runs 5 Times')
     raise Exception
 
-
 @retry(wait=wait_fixed(2))
 def fixed_wait_attempts():
     print('Waits 2 Seconds Between Retries')
     raise Exception
-
 
 @retry(stop=stop_after_attempt(5), wait=wait_fixed(2))
 def max_and_fixed_wait_attempts():

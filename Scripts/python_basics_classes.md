@@ -1,5 +1,7 @@
-Link:
-https://blog.jamesfheath.com/2020/07/python-basics-classes-and-objects.html
+# Links
+Blog: https://blog.jamesfheath.com/2020/07/python-basics-classes-and-objects.html
+Python Code: https://github.com/JamesFHeath/jamesfheathblog_code/blob/master/Python%20Basics/Classes%20and%20Objects.py
+Java Code: https://github.com/JamesFHeath/jamesfheathblog_code/blob/master/Python%20Basics/Classes%20and%20Objects.java
 Python Classes: https://docs.python.org/3/tutorial/classes.html
 Multiple Inheritance: https://docs.python.org/3/tutorial/classes.html#multiple-inheritance
 Method Resolution Order: https://www.python.org/download/releases/2.3/mro/
@@ -201,6 +203,7 @@ derived_object.base_attribute
 
 # Multiple Inheritance
 Python also supports multiple inheritance. 
+In Java, a class cannot extend, or inherit from more than one class, but it can implement multiple interfaces which is a way to get similar behavior. 
 Let's define baseclassa
 And baseclassb
 Then we can created DeriveClassAB with the base classes separated by commas

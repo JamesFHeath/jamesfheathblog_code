@@ -96,21 +96,6 @@ derived_object.x
 derived_object.y
 derived_object.base_attribute
 
-class BaseClass:
-    def __init__(self, x):
-        self.x = x    
-
-class DerivedClass(BaseClass):
-    def __init__(self, x, y):
-        self.x = x    
-        self.y = y
-
-derived_object = DerivedClass(x=1, y=2)
-
-derived_object.x
-derived_object.y
-derived_object.base_attribute
-
 # Multiple Inheritance
 class BaseClassA:
     pass
