@@ -1,6 +1,6 @@
 Links:
 Blog: https://blog.jamesfheath.com/2020/07/python-library-tenacity.html
-Code: https://github.com/JamesFHeath/jamesfheathblog_code/blob/master/Python%20Libraries/python_library_tenacity.md
+Code: https://github.com/JamesFHeath/jamesfheathblog_code/blob/master/Python%20Libraries/Tenacity.py
 Tenacity on PyPi: https://pypi.org/project/tenacity/
 Tenacity Source on GitHub: https://github.com/jd/tenacity
 

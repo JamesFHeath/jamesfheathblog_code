@@ -132,7 +132,7 @@ public class MyClass{
 # Inheritance
 Inheritance is used to create a derived class with the properties of its base or parent class. 
 In Python, inherited classes are added to the class signature. 
-DerivedClass inherits from BaseClass
+Here, DerivedClass inherits from BaseClass
 
 class BaseClass:
     pass
@@ -140,7 +140,19 @@ class BaseClass:
 class DerivedClass(BaseClass)
     pass
  
-Use **isinstance(object, class)** to check if an object is an instance of class or if class is one of its ancestors. 
+Class inheritance can be checked with the builtin issubclass function.
+Pass in the derived class and the base class     **issubclass(derived_class, base_class)**. 
+
+class BaseClass:
+    pass
+
+class DerivedClass(BaseClass):
+    pass
+
+issubclass(DerivedClass, BaseClass)
+
+Use **isinstance(object, class)** to check if an object is an instance of class.
+This also checks if the class is an ancestor of the object's class 
 
 class BaseClass:
     pass
@@ -152,21 +164,13 @@ d = DerivedClass()
 isinstance(d, DerivedClass)
 isinstance(d, BaseClass)
 
-Class inheritance can also be checked with **issubclass(derived_class, base_class)**. 
-
-class BaseClass:
-    pass
-
-class DerivedClass(BaseClass):
-    pass
-
-issubclass(DerivedClass, BaseClass)
 
 Derived classes receive all the attributes of their base class. 
 Any attribute can be overwritten by the derived class with no restrictions. 
 Attributes are first searched for in the derived class, and then to the bases class and so on. 
 Use **super** to explicitly call the base class. 
-Override __init__ from BaseClass
+Here we override __init__ from BaseClass, but still call it with the super function
+Our derived object will have the attributes x... and y that it passed in...and also the base attribute from BaseClass.
 
 class BaseClass:
     base_attribute = 'base attribute value'
@@ -186,30 +190,16 @@ derived_object.x
 derived_object.y
 derived_object.base_attribute
 
-class BaseClass:
-    def __init__(self, x):
-        self.x = x    
-
-class DerivedClass(BaseClass):
-    def __init__(self, x, y):
-        self.x = x    
-        self.y = y
-
-derived_object = DerivedClass(x=1, y=2)
-
-derived_object.x
-derived_object.y
-derived_object.base_attribute
 
 # Multiple Inheritance
 Python also supports multiple inheritance. 
 In Java, a class cannot extend, or inherit from more than one class, but it can implement multiple interfaces which is a way to get similar behavior. 
-Let's define baseclassa
-And baseclassb
-Then we can created DeriveClassAB with the base classes separated by commas
+Let's define baseclass A...
+And baseclass A
+Then we can created DeriveClass A B with the base classes separated by commas
 Multiple inheritance can have some gotchas, because there are multiple ways to search for base class attributes. 
 Python uses a left to right, depth first search based algorithm to search the class hierarchy. 
-I've linked the documentation in the video description. 
+I've linked the documentation in the video description if you want more details. 
 https://www.python.org/download/releases/2.3/mro/
 
 class BaseClassA:
@@ -223,7 +213,7 @@ class DerivedClassAB(BaseClassA, BaseClassB):
 
 # Private Fields
 Java and other languages have private fields and methods that can only be accessed from inside the class. 
-Python on the other hand has no restrictions on access. 
+Python, on the other hand, has no restrictions on access. 
 If you don't want a client using a field or method you should prefix its name with an underscore. 
 This isn't enforced by the language, but is a convention that most Python programmers understand. 
 Here we can create a class that has an attribute underscore x, enforced by convention.
@@ -240,9 +230,9 @@ class JavaPrivateClass {
 Static methods are methods that belong to the class but not any specific object instantiation. 
 Python uses the **@staticmethod** decorator to define a static method, 
 In Java, the equivalent is the static keyword.  
-TwoAttrClass contains 2 attributes, the variable x and the function f
+StaticMethod class has the decorated method f
 notice no self parameter for the static method 
-When we create an object instance, and check the static function, it's accessible but we can see its type is function and not bound method like we saw before. 
+When we craeate an object instance, and check the static method, it's accessible but we can see its type is function and not bound method like we saw before. 
 
 class StaticMethodClass:
     @staticmethod
