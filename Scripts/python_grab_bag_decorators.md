@@ -1,6 +1,6 @@
 LINKS:
 Blog: https://blog.jamesfheath.com/2020/08/python-grab-bag-decorators.html
-Code: 
+Code: https://github.com/JamesFHeath/jamesfheathblog_code/blob/master/Python%20Grab%20Bag/decorators.py
 Tenacity: https://pypi.org/project/tenacity/
 
 # Intro
@@ -131,4 +131,5 @@ Play around with the syntax, and follow the chain of execution so you can unders
 Decorators are used for tons of purposes, one of my favorite examples is the tenacity library for retrying code after exception, which I have linked in the video description. 
 Another common use case is a logging facility for logging decorated functions and their parameters automatically. 
 Basically, anywhere you have generic behavior you want your functions to perform, a decorator could be a good choice. 
+Links to my blog post on decorators and the video code are in the description. 
 I'll see everyone next time. 

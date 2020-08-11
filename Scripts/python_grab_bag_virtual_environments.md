@@ -1,4 +1,7 @@
 LINKS:
+Blog: https://blog.jamesfheath.com/2020/08/python-grab-bag-virtual-environments.html
+Commands: https://github.com/JamesFHeath/jamesfheathblog_code/blob/master/Python%20Grab%20Bag/virtual_envrionments.sh
+Python Virtual Environment Documentation: https://docs.python.org/3/tutorial/venv.html
 
 # Intro
 Hi Everyone, SearingFrost here with another Python Basics Video.
