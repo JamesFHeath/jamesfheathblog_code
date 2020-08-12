@@ -26,12 +26,12 @@ Here is a table of some translations
 | false | False |
 
 # Loads and Dumps
-loads: takes a string of JSON and returns a Python object
-dumps: takes a Python object and returns a string of JSON
+loads: parses a string of JSON into a Python object
+dumps: serializes a Python object into a string of JSON
 
 The main operations used with the JSON library are **loads** and **dumps**. 
 **loads** takes in a String of JSON and parses it into the corresponding Python objects. 
-**dumps** is the reverse, it takes a Python object and creates a String of JSON. 
+**dumps** is the reverse, it takes a Python object and serializes it into a string of JSON. 
 You'll often receive JSON responses from web servers and parse them with **loads**. 
 Then you can create a Python object and stringify it with **dumps** to send back.  
 First we just import json

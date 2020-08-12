@@ -1,11 +1,12 @@
 import json
 
+# Parsing JSON
 json_string = '{"key": "value", "array_key": [1, 2, 3], "another_key_for_boolean": false}'
 
 python_object = json.loads(json_string)
 python_object
 
-
+# Serializing JSON
 python_object['new_key'] = None
 python_object['array_key'].append(4)
 python_object
@@ -18,6 +19,7 @@ python_object = {'parent': {'child_1': [1, 2, 3], 'child_2': True}}
 
 json.dumps(python_object, indent=4)
 
+# Custom Serialization with json.JSONEncoder
 import datetime
 
 now = datetime.datetime.now()
