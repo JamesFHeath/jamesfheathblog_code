@@ -12,7 +12,9 @@ The nature of JavaScript is dynamic, and Python works well for parsing and worki
 The standard library of Python has a wonderful JSON module that makes working with JSON simple. 
 
 # JSON to Python
-JSON maps nicely to Python objects when parsed. When translating Python to JSON, this process is reversible. However, more complex Python objects like datetime or namedtuples will not translate without custom behavior specified. 
+JSON maps nicely to Python objects when parsed. 
+When translating Python to JSON, this process is reversible. 
+However, more complex Python objects like datetime or namedtuples will not translate without custom behavior specified. 
 Here is a table of some translations
 
 | JSON | Python |

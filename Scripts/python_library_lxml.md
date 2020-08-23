@@ -21,6 +21,7 @@ This allows for standard Python syntax to work seamlessly with etree elements.
 # Parsing and Serializing XML
 lxml can read from files or string objects of XML and parse them into etree elements. 
 Let's take this simple XML string and put it into an etree element using the fromstring fuction.
+Be sure to define the string as binary if you have the xml declaration tag
 The store elemnt refers to the root of our xml document. 
 
  <?xml version="1.0" encoding="UTF-8"?>
@@ -68,8 +69,9 @@ We can see the SearingFrost is changed to NewName
 
 for event, element in etree.iterwalk(store, events=('start', 'end')):
     print(event, element)
-    if element.tag == 'SearingFrost':
-        element.tag = 'NewName'
+    print(element.text)
+    if element.text == 'SearingFrost':
+        element.text = 'NewName'
 
 # Creating XML objects 
 lxml also makes it possible to build your own XML trees from scratch. 
@@ -97,7 +99,7 @@ print(etree.tostring(store, encoding='utf-8', xml_declaration=True, pretty_print
 Finally, we're going to dig into namespaces with a fair amount of detail. 
 Namespaces are an important part of XML, and lxml provides full utility to work with them. 
 Namespaces are prefixes for tag names to avoid tag names clashing.
-The are defined by URI's, which are essentially more generic URL's, in that URI's do not need to describe how to locate a resource. 
+They  are defined by URI's, which are essentially more generic URL's, in that URI's do not need to describe how to locate a resource. 
 Namespaces are defined in the attribute of XML elements, usually at the root level.  
 Namespace Declarations use a special attribute name xmlns:namespace="URI/of/namespace.
 Remember, the URI doesn't necessarily have to point to anything real, it just needs to be unique so it doesn't clash with other namespaces. 

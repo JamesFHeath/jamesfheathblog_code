@@ -4,7 +4,7 @@ Commands: https://github.com/JamesFHeath/jamesfheathblog_code/blob/master/Python
 Python Virtual Environment Documentation: https://docs.python.org/3/tutorial/venv.html
 
 # Intro
-Hi Everyone, SearingFrost here with another Python Basics Video.
+Hi Everyone, SearingFrost here.
 Today we're going to dig into the Python grab bag and pull out virtual environments. 
 
 Virtual environments are a way of isolating specific Python resources for a project. 
@@ -64,5 +64,5 @@ cat ~/searing-frost-project/requirements.txt
 Thanks for watching this video on virtual environments. 
 Virtual environments will come up often when working on larger projects with other people. 
 It's important to understand how they work in order to work effectively. 
-Links to my blog post on decorators and the video commands are in the description. 
+Links to my blog post on virtual environments and the video commands are in the description. 
 I'll see everyone next time. 

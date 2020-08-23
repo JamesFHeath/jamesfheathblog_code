@@ -14,8 +14,9 @@ store.xpath('/store/*')
 
 for event, element in etree.iterwalk(store, events=('start', 'end')):
     print(event, element)
-    if element.tag == 'SearingFrost':
-        element.tag = 'NewName'
+    print(element.text)
+    if element.text == 'SearingFrost':
+        element.text = 'NewName'
 
 # Creating XML objects 
 store = etree.Element('store')
